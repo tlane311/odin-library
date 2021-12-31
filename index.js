@@ -76,7 +76,7 @@ function createCard(book,index){
 
     const readDiv = document.createElement('div');
     // to the best of my knowledge and understanding, using the Boolean wrapper should prevent malicious input from entering readDiv. Without the Boolean wrapper, one can chain ternary operators and input whatever they want.
-    readDiv.innerHTML = Boolean(book.read) ? "read &#x2713;" : "unread &#x2717;"
+    readDiv.innerHTML = Boolean(book.read) ? "read &#x2713;" : "read &#x2717;"
     readDiv.classList.toggle("read", true);
 
 
@@ -109,7 +109,7 @@ function createCard(book,index){
     //attaching
     ul.append(titleLi, authorLi, pagesLi)
 
-    card.append(ul, readDiv, removeBtn, toggleReadBtn);
+    card.append(readDiv, ul, removeBtn, toggleReadBtn);
 
     return card;
 }

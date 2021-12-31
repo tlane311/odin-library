@@ -5,16 +5,20 @@
         <title> Library </title>
         <script src="index.js" defer></script>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet"> 
     </head>
     <body>
+        <h1> The Library </h1>
         <div id="the-library"></div>
         <form>
-            <legend>New Book Details</legend>
-            <label>Title <input name="title" type="text"> </label>
-            <label>Author <input name="author" type="text"></label>
-            <label>Number of Pages <input name="pages" type="number"></label>
+            <legend>Add a book to The Library</legend>
+            <label>Title: <input name="title" type="text"> </label>
+            <label>Author: <input name="author" type="text"></label>
+            <label>Number of Pages: <input name="pages" type="number"></label>
             <label>Read? <input name="read" type="checkbox"></label>
-            <button id="new-book-btn"> Add book </button>
+            <button id="new-book-btn"> Add Book </button>
         </form>
     </body>    
 </html>
